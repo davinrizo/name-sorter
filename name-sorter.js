@@ -31,10 +31,8 @@ sorting = (x) =>{
 };
 
 const sortedList = sorting(names);
-const sortedListForBrowser = sortedlist.toString().split(',').join("<br>")
-const sortedListForTxt = sortedlist.toString().split(',').join("\n")
-
-console.log(typeof sortedlist);
+const sortedListForBrowser = sortedList.toString().split(',').join("<br>")
+const sortedListForTxt = sortedList.toString().split(',').join("\n")
 
 arrayToTxtFile(['Sorted list:', sortedListForTxt], './sorted-names-list.txt', err => {
     if(err) {
